@@ -1,0 +1,17 @@
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.logo-name {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.btn {
+  width: 320px;
+}
+

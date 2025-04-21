@@ -1,0 +1,67 @@
+<div class="container  text-center flex flex-column ">
+    <br>
+    <br>
+    <br>
+    @if (isPlayer) {
+        <div class="row">
+            <div class="col-md-3 animate__animated animate__fadeInLeft">
+                <img src="img/user.svg" alt="user">
+            </div>
+            <div class="col-md-5 animate__animated animate__zoomIn">
+                <div class="row">
+                    <div class="col-md-12 mt-4">
+                        <b>Name: </b> Amr Mossad Saber
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <b>Age: </b> 32
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <b>Nationality: </b> Egyptian
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 animate__animated animate__fadeInRight">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary btn-lg w-50 ">
+                            Upload Video
+                        </button>
+                    </div>
+
+                    <div class="col-md-12 mt-5">
+                        <button class="btn btn-primary btn-lg w-50 " (click)="openStatistics()">
+                            Statistics
+                        </button>
+                    </div>
+
+                    <div class="col-md-12 mt-5">
+                        <button class="btn btn-primary btn-lg w-50 " (click)="openProfile()">
+                            Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    } @else {
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-primary btn-lg w-50 animate__animated animate__fadeInLeft">
+                    Dashboard
+                </button>
+            </div>
+
+            <div class="col-md-12 mt-5">
+                <button class="btn btn-primary btn-lg w-50 animate__animated animate__fadeInRight" (click)="openCandidates()">
+                    Candidates
+                </button>
+            </div>
+
+            <div class="col-md-12 mt-5">
+                <button class="btn btn-primary btn-lg w-50 animate__animated animate__fadeInLeft" (click)="openEntityProfile()">
+                    Profile
+                </button>
+            </div>
+        </div>
+    }
+
+</div>
