@@ -12,7 +12,7 @@ import {EntityProfileComponent} from "./Components/entity-profile/entity-profile
     styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-    isPlayer: boolean = true;
+    isPlayer: boolean = false;
 
     constructor(
         private dialog: MatDialog,
